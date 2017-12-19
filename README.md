@@ -4,7 +4,7 @@ It is really a simple one but with a very satisfied effect. :sparkles:
 
 <img src="https://github.com/haijianliu/particle-system-tease/blob/master/Assets/Textures/particle_fire%402x.png" width="600">
 
-## Fire :fire:
+## Instance
 
 For a good result, I create this fire effect with 4 Emitters and 1 light:
 
