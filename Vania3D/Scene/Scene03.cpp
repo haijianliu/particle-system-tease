@@ -84,5 +84,25 @@ void Scene03::start() {
 	light[1]->getComponent<PointLight>()->color = glm::vec3(20.0f, 0.0f, 0.0f);
 	light[2]->getComponent<PointLight>()->color = glm::vec3(0.0f, 20.0f, 0.0f);
 	light[3]->getComponent<PointLight>()->color = glm::vec3(0.0f, 0.0f, 20.0f);
+	
+	// fire
+	// resources
+	resources->loadTexture("fx_fire_D", "./Assets/Models/FantasyDungeon/Textures/FX/fx_fire_D.TGA");
+	resources->createMaterial("fx_fire", resources->getShader("fx_uv_animation"));
+	resources->getMaterial("fx_fire")->addTexture("albedoMap", resources->getTexture("fx_fire_D"));
+	resources->loadTexture("fx_fire_smoke_D", "./Assets/Models/FantasyDungeon/Textures/FX/fx_fire_smoke_D.TGA");
+	resources->createMaterial("fx_fire_smoke", resources->getShader("fx_image"));
+	resources->getMaterial("fx_fire_smoke")->addTexture("albedoMap", resources->getTexture("fx_fire_smoke_D"));
+	resources->loadTexture("fx_fire_drop_D", "./Assets/Models/FantasyDungeon/Textures/FX/fx_fire_drop_D.TGA");
+	resources->createMaterial("fx_fire_drop", resources->getShader("fx_image"));
+	resources->getMaterial("fx_fire_drop")->addTexture("albedoMap", resources->getTexture("fx_fire_drop_D"));
+	resources->loadTexture("fx_fire_spark_D", "./Assets/Models/FantasyDungeon/Textures/FX/fx_fire_spark_D.TGA");
+	resources->createMaterial("fx_fire_spark", resources->getShader("fx_image"));
+	resources->getMaterial("fx_fire_spark")->addTexture("albedoMap", resources->getTexture("fx_fire_spark_D"));
+	
+	// create
+	FxTorchFire* fxTorchFire = FxTorchFire::getInstance();
+	glm::mat4 fireTransformation = glm::translate(glm::vec3(0,1,1));
+	fxTorchFire->createPrefab("fire", fireTransformation, this);
 }
 

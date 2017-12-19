@@ -107,6 +107,6 @@ void FxTorchFire::createPrefab(std::string name, glm::mat4 model, Scene* scene) 
 	lightTransform->position = positon;
 	PointLight* lightPointLight = light->addComponent<PointLight>();
 	lightPointLight->color = glm::vec3(1, 0.4, 0.1);
-	lightPointLight->intensity = 2;
+	lightPointLight->intensity = 5;
 	scene->addGameObject((name + "light").c_str(), light);
 }
