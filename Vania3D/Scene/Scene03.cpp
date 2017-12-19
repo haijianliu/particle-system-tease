@@ -71,11 +71,9 @@ void Scene03::start() {
 		lightTransform->modelScale = glm::vec3(5 * GLOBAL_SCALE);
 		light[i]->addComponent<PointLight>();
 		// for test
-		/*
 		MeshRenderer* lightMeshRenderer = light[i]->addComponent<MeshRenderer>();
 		lightMeshRenderer->model = game->resources->getModel("sphere");
 		lightMeshRenderer->materials.push_back(game->resources->getMaterial("simple"));
-		*/
 		this->addGameObject(("light" + std::to_string(i)).c_str(), light[i]);
 	}
 	light[0]->getComponent<Transform>()->position = glm::vec3( 3.0f,  2,  3.0f);
