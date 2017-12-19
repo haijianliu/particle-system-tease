@@ -2,9 +2,7 @@
 
 It is really a simple one but with a very satisfied effect. :sparkles:
 
-<div class="embed-responsive embed-responsive-16by9">
-<iframe src="https://www.youtube.com/embed/mp6ohizWPgw?loop=1&playlist=mp6ohizWPgw&modestbranding=1&autohide=1&showinfo=0&controls=0" allowfullscreen></iframe>
-</div>
+<img src="https://github.com/haijianliu/dungeon-tease/blob/master/Assets/Textures/dungeon_screen%402x.png" width="600">
 
 ## Fire :fire:
 
