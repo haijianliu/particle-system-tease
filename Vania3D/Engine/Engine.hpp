@@ -6,8 +6,8 @@
 ------------------------------------------------------------------------------*/
 #define GLOBAL_SCALE (0.01)
 #define UNIT_TO_PIXEL (100)
-#define SCREEN_WIDTH (1280)
-#define SCREEN_HEIGHT (720)
+#define SCREEN_WIDTH (1920)
+#define SCREEN_HEIGHT (1080)
 #define NUM_BONES_PER_VEREX (4)
 #define MAX_MESH_INSTANCE (50)
 
